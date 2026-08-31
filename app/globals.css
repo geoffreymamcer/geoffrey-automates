@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-primary: #fafafa;
+    --bg-secondary: #f4f4f5;
+    --bg-card: rgba(255, 255, 255, 0.95);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --text-primary: #09090b;
+    --text-muted: #52525b;
+    --accent-primary: #000000;
+    --accent-secondary: #71717a;
+    --accent-dark: #e4e4e7;
+  }
+
+  .dark {
+    --bg-primary: #000000;
+    --bg-secondary: #09090b;
+    --bg-card: rgba(18, 18, 21, 0.85);
+    --border-color: rgba(255, 255, 255, 0.12);
+    --text-primary: #ffffff;
+    --text-muted: #a1a1aa;
+    --accent-primary: #ffffff;
+    --accent-secondary: #71717a;
+    --accent-dark: #18181b;
+  }
+}
+
+/* Custom Background Grids & Dots - Monochrome */
+.bg-tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
+.dark .bg-tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-circuit-dots {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dark .bg-circuit-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar - Monochrome */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+/* Monochrome Glow effects */
+.glow-white {
+  box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.dark .glow-white {
+  box-shadow: 0 0 25px -5px rgba(255, 255, 255, 0.25);
+}
+
+.glow-dark {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.dark .glow-dark {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.glow-silver {
+  box-shadow: 0 0 20px -3px rgba(0, 0, 0, 0.1);
+}
+
+.dark .glow-silver {
+  box-shadow: 0 0 20px -3px rgba(212, 212, 216, 0.2);
+}
+
+/* Custom Animated Data Flow Lines */
+@keyframes flow-pulse {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-flow-pulse {
+  stroke-dasharray: 8, 8;
+  animation: flow-pulse 2s linear infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
