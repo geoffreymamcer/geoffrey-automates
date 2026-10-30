@@ -121,7 +121,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
             </span>
             <div className="flex items-center gap-1.5 text-[11px] text-neutral-600 dark:text-zinc-400 font-medium">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white"></span>
-              GoHighLevel Specialist
+              GHL Automation Specialist
             </div>
           </div>
         </a>

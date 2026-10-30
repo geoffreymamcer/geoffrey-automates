@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/generate_resume_pdf.mjs && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "clean": "next clean"
+    "clean": "next clean",
+    "resume:legacy": "node scripts/generate_resume_pdf.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

@@ -112,9 +112,9 @@ export default function ServicesSection() {
       title: 'API, Webhook & Custom Middleware Engineering',
       category: 'Integrations',
       badge: 'Automation',
-      description: 'Bridging GoHighLevel with your entire tech stack: Stripe, Shopify, AI LLMs, custom internal databases, Zapier, and Make scenarios with guaranteed reliability.',
+      description: 'Bridging GoHighLevel with the rest of your stack through webhooks, APIs, n8n, Make, and Zapier, including AI steps with fallbacks and error alerts.',
       deliverables: [
-        'Stripe Webhook Subscriptions & Dunning Logic',
+        'n8n Workflows with AI Reply Routing',
         'AI Chatbot (Gemini / OpenAI) Integration in GHL',
         'Custom Node.js Webhook Forwarders & Parsers',
         'E-commerce & External CRM Synchronization',

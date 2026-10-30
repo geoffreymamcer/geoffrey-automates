@@ -42,7 +42,7 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-neutral-100 dark:bg-zinc-900 border border-neutral-300 dark:border-zinc-700 text-neutral-900 dark:text-white shadow-sm"
               >
                 <Workflow className="w-3.5 h-3.5 text-neutral-800 dark:text-zinc-200" />
-                <span>GoHighLevel Specialist</span>
+                <span>GHL Automation Specialist</span>
               </div>
 
               <div 
@@ -50,7 +50,7 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-neutral-100 dark:bg-zinc-900/80 border border-neutral-300 dark:border-zinc-800 text-neutral-800 dark:text-zinc-300"
               >
                 <Code className="w-3.5 h-3.5 text-neutral-600 dark:text-zinc-400" />
-                <span>Full-Stack Developer (MERN / .NET)</span>
+                <span>Workflows, Integrations &amp; AI</span>
               </div>
 
               <div 
@@ -78,7 +78,7 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
               id="hero-subtitle"
               className="text-base sm:text-lg text-neutral-600 dark:text-zinc-300 font-normal leading-relaxed max-w-2xl mb-8"
             >
-              <strong className="text-neutral-900 dark:text-white font-semibold">GoHighLevel (GHL) Specialist and Full-Stack Developer</strong> who builds complete client-acquisition systems, not just chat automations. Independently designed, built, and documented end-to-end GHL systems (CRM pipelines, conditional automations, Conversation AI agents, and funnels) while leveraging a software engineering background (<strong className="text-neutral-900 dark:text-white font-semibold">MERN stack, C#/.NET, RESTful APIs, JWT/RBAC</strong>) to troubleshoot and customize integrations.
+              <strong className="text-neutral-900 dark:text-white font-semibold">GoHighLevel automation specialist</strong> who builds systems that turn leads into booked appointments, automatically: speed-to-lead workflows, appointment reminders and no-show recovery, AI assistants, dead lead reactivation, and payment reminders. A full-stack background (<strong className="text-neutral-900 dark:text-white font-semibold">MERN, C#/.NET, APIs, n8n</strong>) lets me go beyond GHL&apos;s built-in features when a system needs custom AI logic or integrations.
             </p>
 
             {/* CTAs */}
@@ -119,7 +119,7 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
             >
               <div className="p-3 sm:p-3.5 rounded-xl bg-white dark:bg-zinc-950/80 border border-neutral-200 dark:border-zinc-800 shadow-sm overflow-hidden flex flex-col justify-between">
                 <div className="text-base sm:text-lg lg:text-xl font-bold text-neutral-900 dark:text-white font-mono flex items-baseline gap-1">
-                  3 <span className="text-xs font-sans font-medium text-neutral-500 dark:text-zinc-400">Systems</span>
+                  5 <span className="text-xs font-sans font-medium text-neutral-500 dark:text-zinc-400">Systems</span>
                 </div>
                 <div className="text-[11px] text-neutral-600 dark:text-zinc-400 font-medium leading-tight mt-1">
                   End-to-End GHL Builds
@@ -140,7 +140,7 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
                   Integrations
                 </div>
                 <div className="text-[11px] text-neutral-600 dark:text-zinc-400 font-medium leading-tight mt-1">
-                  Make, Stripe, Twilio, Mailgun
+                  n8n, Make, Webhooks, Gemini
                 </div>
               </div>
 
@@ -218,7 +218,7 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
                         Mark Geoffrey A. Batocabe
                       </h3>
                       <p className="text-[11px] text-zinc-300 font-mono drop-shadow-sm mt-0.5">
-                        GHL Specialist &bull; Full-Stack Developer
+                        GHL Automation Specialist
                       </p>
                     </div>
                     <div className="p-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-emerald-400">
@@ -236,7 +236,7 @@ export default function HeroSection({ onOpenResume }: HeroSectionProps) {
                 </span>
                 <span className="font-semibold text-neutral-900 dark:text-white flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white" />
-                  GHL &bull; MERN &bull; .NET &bull; Make
+                  GHL &bull; n8n &bull; MERN &bull; .NET
                 </span>
               </div>
 

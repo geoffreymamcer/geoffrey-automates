@@ -34,7 +34,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs text-neutral-500 dark:text-zinc-400 max-w-sm">
-              GoHighLevel Automation Specialist &bull; Full-Stack Developer (MERN / .NET) &bull; BSIT (2022–2026).
+              GHL Automation Specialist &bull; Workflows, Integrations &amp; AI &bull; BSIT (2022–2026).
             </p>
           </div>
 

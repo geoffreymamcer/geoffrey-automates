@@ -30,16 +30,16 @@ export default function ExperienceSection() {
     },
     {
       period: '2025 – PRESENT',
-      role: 'GoHighLevel Automation Specialist & Full-Stack Builder',
+      role: 'GoHighLevel Automation Specialist',
       organization: 'Independent Portfolio & Systems Development',
-      type: 'Automation & Software Engineering',
+      type: 'Automation & AI Systems',
       icon: Workflow,
-      description: 'Designing, building, and documenting end-to-end client-acquisition systems, multi-step conditional workflows, and full-stack software applications.',
+      description: 'Designing, building, testing, and documenting GoHighLevel and AI automation systems as portfolio demo builds.',
       bullets: [
-        'Architected 3 complete GHL systems (BrightSmile Dental, Nolan & Co. Realty, Ferrow Air & Heat) with custom fields, funnels, and pipelines.',
-        'Engineered multi-branch conditional workflows with instant response, nurture logic, booking calendars, and reputation management.',
-        'Integrated cross-platform Make.com scenarios, Stripe deposits, Twilio SMS, Mailgun email sequences, and Looker Studio dashboards.',
-        'Applied MERN stack, C#/.NET, RESTful APIs, and JWT/RBAC security to build custom applications and diagnose integration bottlenecks.'
+        'Built 5 documented automation systems: BrightSmile Dental, AI Dead Lead Reactivation, AR Payment Chasing, Nolan & Co. Realty, and Ferrow Air & Heat.',
+        'Engineered conditional workflows for speed to lead, nurture, reminders, no-show recovery, lead scoring, and review requests.',
+        'Connected GHL to n8n, Make.com, Google Apps Script, Google Sheets, and Slack through webhooks and APIs, with Gemini for AI reply handling.',
+        'Tested every build against a QA checklist and delivered a system guide, Notion case study, and video walkthrough for each.'
       ]
     },
     {

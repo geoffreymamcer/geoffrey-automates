@@ -97,28 +97,28 @@ export default function TechnicalSkillsSection() {
 
     // Integrations & Automations
     {
-      name: 'Make.com Cross-Platform Scenarios',
+      name: 'n8n Workflows & AI Routing',
       category: 'integrations',
-      description: 'Building automated multi-app scenarios connecting GoHighLevel, Notion, Google Drive, and webhook payloads.',
-      tags: ['Make.com', 'Webhooks', 'Multi-App Scenarios', 'Notion Sync']
+      description: 'Building n8n workflows that receive GHL webhooks, call AI models, parse structured output, and route each case with Switch logic.',
+      tags: ['n8n', 'Webhooks', 'Switch Routing', 'GHL API']
     },
     {
-      name: 'Stripe Payment Integrations',
+      name: 'Make.com & Google Sheets Sync',
       category: 'integrations',
-      description: 'Configuring Stripe payment links, deposit collection, checkout webhooks, and invoice automation in GHL/custom portals.',
-      tags: ['Stripe', 'Payment Links', 'Deposit Logic', 'Checkout Webhooks']
+      description: 'Sending GHL data out through webhooks into Make.com scenarios that log every new lead to Google Sheets in seconds.',
+      tags: ['Make.com', 'Webhooks', 'Google Sheets', 'JSON Payloads']
     },
     {
-      name: 'Twilio SMS & Mailgun Email Delivery',
+      name: 'Google Apps Script Rules Engines',
       category: 'integrations',
-      description: 'Configuring telephony and transactional email delivery, DNS SPF/DKIM authentication, and A2P messaging compliance.',
-      tags: ['Twilio SMS', 'Mailgun', 'SPF/DKIM', 'Email Sequences']
+      description: 'Writing Apps Script that checks data on a schedule, applies business rules, and drives GHL workflows, with logging and alerts.',
+      tags: ['Apps Script', 'JavaScript', 'Scheduled Triggers', 'Alerts']
     },
     {
-      name: 'Looker Studio Reporting Dashboards',
+      name: 'Messaging Compliance & Slack Handoff',
       category: 'integrations',
-      description: 'Connecting data sources into interactive Looker Studio dashboards for pipeline and conversion visualization.',
-      tags: ['Looker Studio', 'BI Dashboards', 'Lead Metrics', 'Data Viz']
+      description: 'Handling opt-outs with DND, capping touches, respecting A2P/TCPA rules, and alerting the team in Slack when a person should take over.',
+      tags: ['DND', 'A2P / TCPA', 'Touch Limits', 'Slack']
     },
 
     // Databases & Data Analytics
@@ -149,10 +149,10 @@ export default function TechnicalSkillsSection() {
 
     // AI Tooling & Prompt Design
     {
-      name: 'AI Tooling (ChatGPT & Claude)',
+      name: 'AI in Automations (Gemini, Conversation AI)',
       category: 'ai',
-      description: 'Prompt design, drafting and refining FAQ/booking scripts, stress-testing edge cases, and code generation assistance.',
-      tags: ['ChatGPT', 'Claude', 'Prompt Design', 'Script Refinement']
+      description: 'Grounding AI in a knowledge base, classifying replies into intents, returning structured JSON, and adding fail-safe fallbacks.',
+      tags: ['Gemini API', 'Conversation AI', 'Prompt Design', 'Fallbacks']
     },
     {
       name: 'Git, GitHub & Version Control',
@@ -176,12 +176,12 @@ export default function TechnicalSkillsSection() {
     { label: 'Multi-Branch Workflow Automations', category: 'ghl' },
     { label: 'GHL Funnels & Landing Pages', category: 'ghl' },
     { label: 'Conversation AI Receptionist', category: 'ai' },
-    { label: 'Make.com Cross-Platform Sync', category: 'integrations' },
-    { label: 'Stripe, Twilio & Mailgun', category: 'integrations' },
+    { label: 'n8n, Make.com & Webhooks', category: 'integrations' },
+    { label: 'AI Reply Handling & Reactivation', category: 'ai' },
     { label: 'Full-Stack MERN (React/Node/Express)', category: 'fullstack' },
     { label: 'C# / ASP.NET Core Backend', category: 'fullstack' },
     { label: 'MongoDB / PostgreSQL / SQL Server', category: 'database' },
-    { label: 'Looker Studio / Power BI Dashboards', category: 'integrations' }
+    { label: 'Dashboards & Reporting', category: 'integrations' }
   ];
 
   const toggleNeed = (label: string) => {

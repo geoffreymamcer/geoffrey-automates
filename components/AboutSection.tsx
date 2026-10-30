@@ -25,14 +25,14 @@ export default function AboutSection() {
       title: 'GoHighLevel Architecture & CRM',
       description: 'Designing end-to-end sub-accounts, custom fields/tags, opportunity pipelines, calendars with buffer/multi-staff logic, and high-converting funnels.',
       badge: 'GHL Specialist',
-      highlights: ['Sub-Account Provisioning & Branding', '7 & 10 Stage Pipelines', 'Calendars & Multi-Staff Scheduling', 'Funnels & Landing Pages'],
+      highlights: ['Pipelines, Custom Fields & Values', 'Funnels, Forms & Calendars', 'Conversation AI Assistants', 'Dashboards, Smart Lists & Snapshots'],
     },
     {
       icon: Zap,
       title: 'Conditional Workflow Automations',
-      description: 'Building multi-step conditional workflows with branching if/else paths, instant lead follow-ups, appointment reminders, and reputation management sequences.',
+      description: 'Building conditional workflows that respond to leads in seconds, follow up until they book, remind and recover no-shows, and stop the moment the goal is reached.',
       badge: 'Automations',
-      highlights: ['Multi-Branch If/Else Logic', 'Nurture & No-Show Recovery', 'State Management & Recalls', 'Reputation / Review Requests'],
+      highlights: ['Speed to Lead & Nurture', 'Reminders & No-Show Recovery', 'Lead Scoring & Hot Lead Alerts', 'Review Requests & Reactivation'],
     },
     {
       icon: Code2,
@@ -43,10 +43,10 @@ export default function AboutSection() {
     },
     {
       icon: Bot,
-      title: 'Integrations, Data & AI Tooling',
-      description: 'Connecting Make.com, Stripe, Twilio, Mailgun, and Looker Studio dashboards, paired with prompt design & script refinement using ChatGPT & Claude.',
+      title: 'Integrations & AI Automation',
+      description: 'Connecting GoHighLevel to other tools with webhooks, n8n, Make.com, and Apps Script, and adding AI that classifies replies and writes messages safely, with rules deciding what happens next.',
       badge: 'Integrations & AI',
-      highlights: ['Make.com, Twilio & Mailgun', 'Stripe & Looker Studio', 'MongoDB, MS SQL & PostgreSQL', 'Conversation AI & Prompts'],
+      highlights: ['n8n, Make.com & Zapier', 'Webhooks & REST APIs', 'Gemini AI Intent Routing', 'Google Apps Script & Sheets'],
     }
   ];
 
@@ -64,7 +64,7 @@ export default function AboutSection() {
             About <span className="bg-gradient-to-r from-neutral-950 via-neutral-700 to-neutral-500 dark:from-white dark:via-zinc-200 dark:to-zinc-400 bg-clip-text text-transparent">Mark Geoffrey</span>
           </h2>
           <p className="mt-3 text-neutral-600 dark:text-zinc-400 max-w-2xl text-sm sm:text-base">
-            GoHighLevel Automation Specialist &amp; Full-Stack Developer (MERN / .NET). BSIT Graduate (2022–2026) with specialized expertise in building complete client-acquisition systems.
+            GoHighLevel automation specialist with a full-stack development background (MERN / .NET). BSIT Graduate (2022–2026) who builds lead-to-booking, lead reactivation, and payment collection systems.
           </p>
         </div>
 

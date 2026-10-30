@@ -38,28 +38,82 @@ export default function ProjectShowcase() {
 
   const projects: Project[] = [
     {
-      id: 'brightsmile-dental',
-      title: 'BrightSmile Dental Clinic',
+      id: 'dead-lead-reactivation',
+      title: 'AI Dead Lead Reactivation System',
       category: 'ghl',
-      categoryLabel: 'GoHighLevel + AI System (20-Day Build)',
-      subtitle: 'End-to-end dental clinic CRM and automation system, independently designed, built, and documented solo.',
+      categoryLabel: 'GoHighLevel + n8n + Gemini (Demo Build)',
+      subtitle: 'Two-way AI reactivation system that reads every reply from old real estate leads and books, answers, escalates, or opts out automatically.',
       metrics: [
-        { label: 'Build Duration', value: '20 Days' },
-        { label: 'Pipeline Architecture', value: '7 Stages' },
-        { label: 'Funnel Scale', value: '5 Pages' }
+        { label: 'Reply Intents', value: '7 Routes' },
+        { label: 'Touch Limit', value: '5 Max' },
+        { label: 'QA Scenarios', value: '6 / 6 Pass' }
       ],
-      problem: 'Dental clinics require an integrated system to capture inbound patient leads, nurture them across multiple channels, automate deposit booking, and retain patients through automated recall cycles.',
-      solution: 'Architected a comprehensive GHL CRM ecosystem with custom fields, 5-page responsive funnel, multi-stage pipeline, Conversation AI receptionist, and multi-tool cross-platform automations.',
+      problem: 'A real estate agency had about 1,400 old leads it already paid for, but follow-up was manual and inconsistent, so buyers and sellers who inquired months or years ago went quiet.',
+      solution: 'Scored and tiered old leads, ran tiered GoHighLevel outreach, and built an n8n reply engine where Gemini classifies every reply and routes it to the right action, with Slack handoff for anything that needs a person.',
       architecture: [
-        'Architected a 7-stage sales pipeline, custom fields, and a 5-page responsive website/funnel driving form submissions directly into the CRM.',
-        'Built native GHL automations for lead nurture, appointment reminders, no-show recovery, birthday/recall campaigns, and review-request → reputation management sequence.',
-        'Trained an AI receptionist in GHL Conversation AI, using ChatGPT to draft FAQ/booking scripts and Claude to refine them and stress-test edge-case patient questions.',
-        'Connected cross-platform automation via Make.com (GHL → Notion), Stripe test-mode deposits, Twilio SMS, Mailgun email sequences, and Zoom virtual consultation booking.',
-        'Delivered a Looker Studio reporting dashboard, an exported reusable snapshot, and a full documentation trail (build log, testing plan, case study) across Notion and Google Drive.'
+        'Built an n8n reply engine where Gemini classifies every lead reply into 7 intents and routes it to a booking link, a clarifying question, a knowledge-base answer, a Slack escalation, or an opt-out.',
+        'Scored and tiered old leads by recency, deal value, and inquiry type, then ran tiered GHL outreach capped at 5 touches with a daily silent-lead check.',
+        'Enforced opt-outs with DND directly in GoHighLevel, so no workflow can message an opted-out contact again.',
+        'Added a fail-safe JSON parser with a regex fallback, so a bad AI response never breaks the flow or sends a wrong message.',
+        'Booked leads move to "Reactivated - Appointment Set" and the sales team gets a Slack alert with name, time, and deal value. Passed all 6 end-to-end QA scenarios.'
       ],
-      stack: ['GoHighLevel', 'Conversation AI', 'Make.com', 'Stripe', 'Twilio SMS', 'Mailgun', 'Looker Studio', 'Zoom'],
+      stack: ['GoHighLevel', 'n8n', 'Gemini API', 'Webhooks', 'Slack', 'Google Sheets'],
       imageGradient: 'bg-gradient-to-br from-neutral-800 via-zinc-900 to-black',
-      icon: Stethoscope
+      icon: Bot,
+      liveUrl: 'https://app.notion.com/p/4077113faf3d818390feeea8dc583c81',
+      liveUrlLabel: 'View Case Study'
+    },
+    {
+      id: 'brightsmile-dental',
+      title: 'BrightSmile Lead-to-Booking System',
+      category: 'ghl',
+      categoryLabel: 'GoHighLevel Dental Clinic System (Demo Build)',
+      subtitle: 'End-to-end GoHighLevel system that turns dental leads into booked, reminded, and reviewed patients.',
+      metrics: [
+        { label: 'Workflows', value: '10' },
+        { label: 'Lead Sources', value: '3 Channels' },
+        { label: 'QA Checklist', value: '19 Checks' }
+      ],
+      problem: 'Dental clinics answer leads hours late, miss calls while the front desk is busy, lose appointments to no-shows, and have no clear view of which marketing brings in patients.',
+      solution: 'Built a complete GoHighLevel system that captures leads from a landing page, website chat, and missed calls, responds within seconds, books appointments automatically, recovers no-shows, and requests Google reviews.',
+      architecture: [
+        'Built 10 workflows covering speed to lead with a 5-day nurture, confirmations and reminders, no-show recovery, cancellations, review requests, and missed-call text-back.',
+        'Added a Conversation AI assistant that answers FAQs from a knowledge base and books directly into the calendar.',
+        'Scored leads on urgency, treatment, and insurance; hot leads create a "call within 15 minutes" task and every lead is logged to Google Sheets via a webhook and Make.com.',
+        'Ran a 19-item QA checklist with fresh test contacts and fixed edge cases such as duplicate status tags after a rebook and stale reminders after a cancellation.',
+        'Delivered an owner dashboard, smart lists for the front desk, a system guide, and a reusable snapshot.'
+      ],
+      stack: ['GoHighLevel', 'Conversation AI', 'Make.com', 'Webhooks', 'Google Sheets', 'Dashboards'],
+      imageGradient: 'bg-gradient-to-br from-zinc-900 via-neutral-950 to-black',
+      icon: Stethoscope,
+      liveUrl: 'https://app.notion.com/p/4077113faf3d817db2d6c65715f27da4',
+      liveUrlLabel: 'View Case Study'
+    },
+    {
+      id: 'ar-payment-chasing',
+      title: 'AR Payment Chasing Automation',
+      category: 'ghl',
+      categoryLabel: 'GoHighLevel + Apps Script + Gemini (Demo Build)',
+      subtitle: 'Automated collections system that escalates invoice reminders and stops the moment a client pays or replies.',
+      metrics: [
+        { label: 'Test Scenarios', value: '23 / 23' },
+        { label: 'Failure Drills', value: '7 / 7 Safe' },
+        { label: 'Total AI Cost', value: '~$0.13' }
+      ],
+      problem: 'Small service businesses lose cash flow to invoices that slip 30 to 90 days past due, because chasing payments is awkward, late, and inconsistent.',
+      solution: 'Built a rules engine in Google Apps Script that checks every invoice hourly, drives a GoHighLevel reminder ladder from friendly to firm, and hands unresponsive accounts to a person with a full summary.',
+      architecture: [
+        'Built an Apps Script rules engine that ages invoices hourly and drives a 4-stage GHL reminder ladder that stops on payment or reply.',
+        'Limited Gemini to wording only, with validation and a pre-approved template fallback if a draft fails.',
+        'Routed replies by intent (payment plan, dispute, already paid), with owner approval for payment plans and missed-payment monitoring.',
+        'Added watchdogs, email alerts, a weekly digest, and a Sheet-vs-GHL reconciliation check, so every error is logged and alerted.',
+        'Passed 23/23 test scenarios and 7/7 failure drills for about $0.13 in total AI cost.'
+      ],
+      stack: ['GoHighLevel', 'Google Apps Script', 'Gemini API', 'Google Sheets', 'JavaScript'],
+      imageGradient: 'bg-gradient-to-br from-neutral-900 via-zinc-950 to-black',
+      icon: TrendingUp,
+      liveUrl: 'https://app.notion.com/p/3fd7113faf3d8076b24cd17ec2adb0b5',
+      liveUrlLabel: 'View Case Study'
     },
     {
       id: 'nolan-realty',
@@ -183,14 +237,14 @@ export default function ProjectShowcase() {
             Portfolio <span className="bg-gradient-to-r from-neutral-950 via-neutral-700 to-neutral-500 dark:from-white dark:via-zinc-200 dark:to-zinc-400 bg-clip-text text-transparent">Highlights</span>
           </h2>
           <p className="mt-3 text-neutral-600 dark:text-zinc-400 max-w-2xl text-sm sm:text-base">
-            Independently built, tested, and documented GoHighLevel portfolio systems alongside full-stack engineering and data analytics projects.
+            GoHighLevel and AI automation systems, each tested, documented, and walked through on video, alongside full-stack and data projects.
           </p>
 
           {/* Category Filter Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2 mt-8 p-1.5 rounded-full border border-neutral-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md">
             {[
-              { id: 'all', label: 'All Projects (5)' },
-              { id: 'ghl', label: 'GoHighLevel Systems (3)' },
+              { id: 'all', label: 'All Projects (7)' },
+              { id: 'ghl', label: 'Automation Systems (5)' },
               { id: 'fullstack', label: 'Software & Data Projects (2)' }
             ].map((cat) => (
               <button

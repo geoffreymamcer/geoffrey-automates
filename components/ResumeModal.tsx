@@ -85,7 +85,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 Resume &bull; Mark Geoffrey A. Batocabe
               </h3>
               <p className="text-[10px] sm:text-xs text-neutral-500 dark:text-zinc-400 truncate">
-                GoHighLevel Automation Specialist | Full-Stack Developer (MERN / .NET)
+                GoHighLevel &amp; Automation Specialist
               </p>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 MARK GEOFFREY A. BATOCABE
               </h1>
               <p className="text-neutral-800 dark:text-zinc-200 font-bold text-sm sm:text-base mt-1">
-                GoHighLevel Automation Specialist &nbsp;|&nbsp; Full-Stack Developer (MERN / .NET)
+                GoHighLevel &amp; Automation Specialist
               </p>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-neutral-600 dark:text-zinc-400 mt-2 font-mono">
                 <span className="flex items-center gap-1">
@@ -146,7 +146,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 <span>&bull;</span>
                 <span className="flex items-center gap-1">
                   <Phone className="w-3.5 h-3.5" />
-                  0994-694-4768
+                  +63 961 345 7068
                 </span>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               SUMMARY
             </h2>
             <p className="text-neutral-700 dark:text-zinc-300 leading-relaxed">
-              GoHighLevel (GHL) Specialist and Full-Stack Developer who builds complete client-acquisition systems, not just chat automations. Has independently designed, built, and documented three end-to-end GHL portfolio systems — covering CRM/pipeline architecture, multi-step conditional automations, AI-powered conversational agents, funnels, booking/calendar logic, and reporting dashboards — while integrating tools like Make.com, Stripe, Twilio, Mailgun, and Looker Studio. Pairs this with a software engineering background (MERN stack, C#/.NET, RESTful APIs, JWT/RBAC security) to troubleshoot integrations, customize workflows beyond no-code limits, and collaborate effectively with development teams.
+              GoHighLevel automation specialist who builds lead-to-booking, lead reactivation, and payment collection systems: CRM pipelines, conditional workflows, AI assistants, and integrations. A full-stack development background (MERN, C#/.NET) lets me go beyond GHL&apos;s built-in features with webhooks, APIs, n8n, and custom AI logic. Every build ships tested, documented, and with a walkthrough video.
             </p>
           </div>
 
@@ -181,14 +181,14 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <div className="p-3.5 rounded-xl bg-neutral-50 dark:bg-zinc-900/60 border border-neutral-200 dark:border-zinc-800">
                 <div className="font-bold text-neutral-900 dark:text-white mb-1">GoHighLevel (GHL):</div>
                 <div className="text-neutral-600 dark:text-zinc-400">
-                  Sub-account setup &amp; branding, custom fields/tags, pipeline/opportunity architecture, forms, calendars (buffers, multi-staff scheduling, Zoom integration), funnels &amp; landing pages, Conversation AI / AI receptionist bots, reputation management, snapshot export, agency/SaaS white-label concepts.
+                  Pipelines, custom fields and values, workflows (If/Else, goal events, math, webhooks), funnels and forms, calendars, Conversation AI, smart lists, dashboards, snapshots.
                 </div>
               </div>
 
               <div className="p-3.5 rounded-xl bg-neutral-50 dark:bg-zinc-900/60 border border-neutral-200 dark:border-zinc-800">
-                <div className="font-bold text-neutral-900 dark:text-white mb-1">Integrations &amp; Automation:</div>
+                <div className="font-bold text-neutral-900 dark:text-white mb-1">Automation &amp; AI:</div>
                 <div className="text-neutral-600 dark:text-zinc-400">
-                  Make.com (multi-step cross-platform scenarios, webhook triggers, data mapping), Stripe (payment links, test deposits), Twilio (SMS/voice configuration), Mailgun (email delivery, DNS verification), Looker Studio (reporting dashboards), Zoom, Zapier.
+                  n8n, Make.com, Zapier, Google Apps Script, Gemini API, REST APIs, webhooks, Slack, Google Sheets, A2P/TCPA and DND compliance.
                 </div>
               </div>
 
@@ -200,9 +200,9 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               </div>
 
               <div className="p-3.5 rounded-xl bg-neutral-50 dark:bg-zinc-900/60 border border-neutral-200 dark:border-zinc-800">
-                <div className="font-bold text-neutral-900 dark:text-white mb-1">Data, Databases &amp; AI Tooling:</div>
+                <div className="font-bold text-neutral-900 dark:text-white mb-1">Data &amp; Delivery:</div>
                 <div className="text-neutral-600 dark:text-zinc-400">
-                  MongoDB, MS SQL Server (T-SQL), PostgreSQL, Python (Pandas, NumPy, Matplotlib), Power BI, ChatGPT &amp; Claude (prompt design, script refinement, edge-case testing).
+                  MongoDB, MS SQL Server (T-SQL), PostgreSQL, Python (Pandas, NumPy, Matplotlib), Power BI, Git/GitHub. Delivery: QA test plans, system guides, Loom walkthroughs, Notion case studies.
                 </div>
               </div>
             </div>
@@ -211,7 +211,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
           {/* GoHighLevel Portfolio Projects */}
           <div>
             <h2 className="text-xs font-bold text-neutral-900 dark:text-white uppercase tracking-wider mb-3 font-mono">
-              GOHIGHLEVEL PORTFOLIO PROJECTS
+              AUTOMATION PORTFOLIO PROJECTS
             </h2>
 
             <div className="space-y-4">
@@ -220,35 +220,79 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <div className="p-4 rounded-xl bg-neutral-50 dark:bg-zinc-900/60 border border-neutral-200 dark:border-zinc-800">
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
                   <span className="font-bold text-neutral-900 dark:text-white">
-                    BrightSmile Dental Clinic — AI-Powered Patient Acquisition &amp; Retention System
+                    AI Dead Lead Reactivation System (Real Estate)
                   </span>
                   <span className="font-mono text-xs font-semibold text-neutral-600 dark:text-zinc-400">
-                    20-Day Build &bull; Solo
+                    GHL &bull; n8n &bull; Gemini
                   </span>
                 </div>
                 <p className="text-xs text-neutral-500 dark:text-zinc-400 mb-2 italic">
-                  End-to-end dental clinic CRM and automation system, built and documented solo.
+                  Demo build on simulated data, with video walkthrough and case study.
                 </p>
                 <ul className="space-y-1 text-xs text-neutral-700 dark:text-zinc-300">
                   <li className="flex items-start gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-black dark:text-white shrink-0 mt-0.5" />
-                    <span>Architected a 7-stage sales pipeline, custom fields, and a 5-page responsive website/funnel with landing pages driving form submissions directly into the CRM.</span>
+                    <span>Built an n8n reply engine where Gemini classifies every lead reply into 7 intents and routes it to a booking link, a clarifying question, a knowledge-base answer, a Slack escalation, or an opt-out.</span>
                   </li>
                   <li className="flex items-start gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-black dark:text-white shrink-0 mt-0.5" />
-                    <span>Built native GHL automations for lead nurture, appointment reminders, no-show recovery, birthday/recall campaigns, and a review-request → reputation management sequence.</span>
+                    <span>Scored and tiered old leads by recency, deal value, and inquiry type, then ran tiered GHL outreach capped at 5 touches with a daily silent-lead check.</span>
                   </li>
                   <li className="flex items-start gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-black dark:text-white shrink-0 mt-0.5" />
-                    <span>Trained an AI receptionist in GHL Conversation AI, using ChatGPT to draft FAQ/booking scripts and Claude to refine them and stress-test edge-case patient questions.</span>
+                    <span>Enforced opt-outs with DND in GoHighLevel and added a fail-safe JSON parser; passed all 6 end-to-end QA scenarios.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="p-4 rounded-xl bg-neutral-50 dark:bg-zinc-900/60 border border-neutral-200 dark:border-zinc-800">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
+                  <span className="font-bold text-neutral-900 dark:text-white">
+                    BrightSmile Lead-to-Booking System (Dental Clinic)
+                  </span>
+                  <span className="font-mono text-xs font-semibold text-neutral-600 dark:text-zinc-400">
+                    GHL &bull; Make.com &bull; Sheets
+                  </span>
+                </div>
+                <p className="text-xs text-neutral-500 dark:text-zinc-400 mb-2 italic">
+                  Demo build on simulated data, with video walkthrough and case study.
+                </p>
+                <ul className="space-y-1 text-xs text-neutral-700 dark:text-zinc-300">
+                  <li className="flex items-start gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-black dark:text-white shrink-0 mt-0.5" />
+                    <span>Built 10 workflows covering speed to lead with a 5-day nurture, confirmations and reminders, no-show recovery, cancellations, review requests, and missed-call text-back.</span>
                   </li>
                   <li className="flex items-start gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-black dark:text-white shrink-0 mt-0.5" />
-                    <span>Connected cross-platform automation via Make.com (GHL → Notion), Stripe test-mode deposits, Twilio SMS, Mailgun email sequences, and Zoom virtual consultation booking.</span>
+                    <span>Added a Conversation AI assistant that answers FAQs and books into the calendar, plus lead scoring that creates a 15-minute call task for hot leads.</span>
                   </li>
                   <li className="flex items-start gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-black dark:text-white shrink-0 mt-0.5" />
-                    <span>Delivered a Looker Studio reporting dashboard, an exported reusable snapshot, and a full documentation trail across Notion and Google Drive.</span>
+                    <span>Ran a 19-item QA checklist, fixed edge cases such as duplicate status tags after a rebook, and delivered a dashboard, system guide, and snapshot.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="p-4 rounded-xl bg-neutral-50 dark:bg-zinc-900/60 border border-neutral-200 dark:border-zinc-800">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
+                  <span className="font-bold text-neutral-900 dark:text-white">
+                    AR Payment Chasing Automation
+                  </span>
+                  <span className="font-mono text-xs font-semibold text-neutral-600 dark:text-zinc-400">
+                    GHL &bull; Apps Script &bull; Gemini
+                  </span>
+                </div>
+                <p className="text-xs text-neutral-500 dark:text-zinc-400 mb-2 italic">
+                  Demo build on simulated data, with video walkthrough and case study.
+                </p>
+                <ul className="space-y-1 text-xs text-neutral-700 dark:text-zinc-300">
+                  <li className="flex items-start gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-black dark:text-white shrink-0 mt-0.5" />
+                    <span>Built an Apps Script rules engine that ages invoices hourly and drives a 4-stage GHL reminder ladder that stops on payment or reply.</span>
+                  </li>
+                  <li className="flex items-start gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-black dark:text-white shrink-0 mt-0.5" />
+                    <span>Limited Gemini to wording, with validation and a template fallback; passed 23/23 test scenarios and 7/7 failure drills for about $0.13 in total AI cost.</span>
                   </li>
                 </ul>
               </div>
