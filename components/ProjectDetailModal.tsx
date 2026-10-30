@@ -13,22 +13,8 @@ import {
   Sparkles
 } from 'lucide-react';
 
-export interface Project {
-  id: string;
-  title: string;
-  category: 'ghl' | 'fullstack' | 'funnels' | 'all';
-  categoryLabel: string;
-  subtitle: string;
-  metrics: { label: string; value: string }[];
-  problem: string;
-  solution: string;
-  architecture: string[];
-  stack: string[];
-  imageGradient: string;
-  icon: any;
-  liveUrl?: string;
-  liveUrlLabel?: string;
-}
+import type { Project } from '@/lib/projects';
+export type { Project };
 
 interface ProjectDetailModalProps {
   project: Project | null;
@@ -239,6 +225,13 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
           </button>
 
           <div className="flex items-center gap-2">
+            <a
+              href={`/case-studies/${project.id}`}
+              className="hidden md:inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold border border-neutral-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 text-neutral-900 dark:text-white hover:border-black dark:hover:border-white shadow-sm transition-all cursor-pointer min-h-[40px]"
+            >
+              <span>Full Page</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
             {project.liveUrl && (
               <a
                 href={project.liveUrl}
