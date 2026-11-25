@@ -63,9 +63,9 @@ export default function ProjectShowcase() {
           {/* Category Filter Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2 mt-8 p-1.5 rounded-full border border-neutral-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md">
             {[
-              { id: 'all', label: 'All Projects (7)' },
-              { id: 'ghl', label: 'Automation Systems (5)' },
-              { id: 'fullstack', label: 'Software & Data Projects (2)' }
+              { id: 'all', label: `All Projects (${projects.length})` },
+              { id: 'ghl', label: `Automation Systems (${projects.filter((p) => p.category === 'ghl').length})` },
+              { id: 'fullstack', label: `Software & Data Projects (${projects.filter((p) => p.category === 'fullstack').length})` }
             ].map((cat) => (
               <button
                 key={cat.id}
