@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { SITE_URL, SITE_DESCRIPTION, PERSON } from '@/lib/site';
 import { projects } from '@/lib/projects';
+import TinaChatWidget from '@/components/TinaChatWidget';
 
 const TITLE = 'Mark Geoffrey A. Batocabe | GHL Automation Specialist | Workflows, Integrations & AI';
 
@@ -98,6 +99,8 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       </head>
       <body className="min-h-screen bg-neutral-50 text-neutral-900 dark:bg-black dark:text-zinc-100 antialiased selection:bg-neutral-900 selection:text-white dark:selection:bg-white dark:selection:text-black font-sans transition-colors duration-300" suppressHydrationWarning>
         {children}
+        {/* DEMO BRANCH ONLY (demo/tina): never merge into main. */}
+        <TinaChatWidget />
       </body>
     </html>
   );
